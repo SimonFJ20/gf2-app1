@@ -1,0 +1,39 @@
+
+:root {
+	--bg: rgb(0, 0, 0);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	text-align: center;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.form {
+	margin: 20px;
+	padding: 40px;
+
+	border-radius: 20px;
+	border: 1px solid rgb(100, 100, 100);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.form > h1 {
+	margin: 0;
+	padding: 0;
+}
+
+div.form > input {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid grey;
+}div.form > input:focus {
+	border: 2px solid black;
+}
+
