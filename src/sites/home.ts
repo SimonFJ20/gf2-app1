@@ -1,12 +1,9 @@
-import { requestCheckToken } from "../ajax";
+import { loadCalender } from "../components/calender";
+import { checkLogin } from "../user";
 import { initLogin } from "./login";
 
 const checkHandler = async () => {
-
-    const token = sessionStorage.getItem('token')!;
-    const res = requestCheckToken({token});
-
-    if(res) document.getElementById('check')!.innerHTML = 'Check Token: Valid';
+    if(await checkLogin()) document.getElementById('check')!.innerHTML = 'Check Token: Valid';
     else {
         document.getElementById('check')!.innerHTML = 'Check Token: Invalid';
         sessionStorage.clear();
@@ -18,6 +15,7 @@ const htmlHome = (username: string) => /*html*/`
     <h1>You are now logged in!</h1>
     <h3>Username: ${username}</h3>
     <button id="check">Check Token</button>
+    ${loadCalender()}
 `;
 
 export const initHome = () => {

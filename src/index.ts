@@ -16,8 +16,6 @@ const main = () => {
 		initLogin();
 	}
 
-	
-
 }
 
 

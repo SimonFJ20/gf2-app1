@@ -47,7 +47,6 @@ export const requestCheckToken = async (request: CheckTokenRequest) => {
     if(request.token === '') return false;
 
     const res = await post('/checktoken', request);
-    console.log(res);
 
     if(res.response === 'success') return true;
     return false;

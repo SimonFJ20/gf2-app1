@@ -37,3 +37,28 @@ div.form > input {
 	border: 2px solid black;
 }
 
+
+table, tr, td, th {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0 10px;
+}
+
+td.calenderclear {
+	background-color: rgb(255, 255, 255);
+}td.calenderwork {
+	background-color: rgb(125, 125, 125);
+}td.calenderdidWork {
+	background-color: rgb(125, 255, 125);
+}td.calendercleardidNotWork {
+	background-color: rgb(255, 125, 125);
+}td.calendercursor {
+	background-color: rgb(125, 125, 255);
+}
+
